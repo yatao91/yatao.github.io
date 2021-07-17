@@ -28,7 +28,7 @@
 <meta property="og:description" content="为什么要抄录&lt;&lt;语义化版本控制 2.0.0&gt;&gt;这篇文档?近期接到一个任务, 主要的工作内容就是解耦版本之间强绑定的版本号问题. 当前公司产品中的各组件在发布时, 版本号都是强一致的. 比如发布版本为 1.0.0, 那么这个产品所依赖的各组件的版本也必定是 1.0.0. 但当前遇到个产品需要是需要增加一个分支版本, 但是并非所有组件都需要去适配, 仅部分组件进行适配, 导致最">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-07-16T16:34:13.000Z">
-<meta property="article:modified_time" content="2021-07-16T16:55:29.602Z">
+<meta property="article:modified_time" content="2021-07-17T11:07:49.072Z">
 <meta property="article:author" content="老苏">
 <meta property="article:tag" content="软件工程">
 <meta name="twitter:card" content="summary">
@@ -277,7 +277,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h3 id="为什么要抄录-lt-lt-语义化版本控制-2-0-0-gt-gt-这篇文档"><a href="#为什么要抄录-lt-lt-语义化版本控制-2-0-0-gt-gt-这篇文档" class="headerlink" title="为什么要抄录&lt;&lt;语义化版本控制 2.0.0&gt;&gt;这篇文档?"></a>为什么要抄录&lt;&lt;语义化版本控制 2.0.0&gt;&gt;这篇文档?</h3><p>近期接到一个任务, 主要的工作内容就是解耦版本之间强绑定的版本号问题. 当前公司产品中的各组件在发布时, 版本号都是强一致的. 比如发布版本为 1.0.0, 那么这个产品所依赖的各组件的版本也必定是 1.0.0. 但当前遇到个产品需要是需要增加一个分支版本, 但是并非所有组件都需要去适配, 仅部分组件进行适配, 导致最终的产品中依赖的组件版本并非一致, 在现有 build 机制下, 将会产生依赖问题.<br>虽然说对版本这块也是有所了解, 但实际并未真正深入的了解过软件工程这块的版本控制范畴, 今天正好在看关于开源项目的一些 contribute guide, 看到了关于版本控制这块的信息, 想着做下记录, 在后续着手进行版本控制”解耦”这块的工作时, 可以深入研究一下.</p>
+        <h3 id="为什么要抄录-lt-lt-语义化版本控制-2-0-0-gt-gt-这篇文档"><a href="#为什么要抄录-lt-lt-语义化版本控制-2-0-0-gt-gt-这篇文档" class="headerlink" title="为什么要抄录&lt;&lt;语义化版本控制 2.0.0&gt;&gt;这篇文档?"></a>为什么要抄录&lt;&lt;语义化版本控制 2.0.0&gt;&gt;这篇文档?</h3><p>近期接到一个任务, 主要的工作内容就是解耦版本之间强绑定的版本号问题. 当前公司产品中的各组件在发布时, 版本号都是强一致的. 比如发布版本为 1.0.0, 那么这个产品所依赖的各组件的版本也必定是 1.0.0. 但当前遇到个产品需要是需要增加一个分支版本, 但是并非所有组件都需要去适配, 仅部分组件进行适配, 导致最终的产品中依赖的组件版本并非一致, 在现有 build 机制下, 将会产生依赖问题.<span id="more"></span><br>虽然说对版本这块也是有所了解, 但实际并未真正深入的了解过软件工程这块的版本控制范畴, 今天正好在看关于开源项目的一些 contribute guide, 看到了关于版本控制这块的信息, 想着做下记录, 在后续着手进行版本控制”解耦”这块的工作时, 可以深入研究一下.</p>
 <h3 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h3><p>版本格式：主版本号.次版本号.修订号，版本号递增规则如下：</p>
 <ol>
 <li>主版本号：当你做了不兼容的 API 修改，</li>
@@ -381,11 +381,28 @@
 
 
 
-    
+      <div class="tabs tabs-comment">
+        <ul class="nav-tabs">
+            <li class="tab"><a href="#comment-disqus">disqus</a></li>
+            <li class="tab"><a href="#comment-disqusjs">disqusjs</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane disqus" id="comment-disqus">
+              
   <div class="comments" id="disqus_thread">
     <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
   </div>
   
+            </div>
+            <div class="tab-pane disqusjs" id="comment-disqusjs">
+              
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+            </div>
+        </div>
+      </div>
 </div>
   </main>
 
@@ -437,6 +454,10 @@
 
 <script class="next-config" data-name="disqus" type="application/json">{&quot;enable&quot;:true,&quot;shortname&quot;:&quot;laosu&quot;,&quot;count&quot;:true,&quot;i18n&quot;:{&quot;disqus&quot;:&quot;disqus&quot;}}</script>
 <script src="/js/third-party/comments/disqus.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css" integrity="sha256-GxdCIOyfxQ1OBfS99qAIJDoGK1ADuBsxhMTqXG82fAY=" crossorigin="anonymous">
+
+<script class="next-config" data-name="disqusjs" type="application/json">{&quot;enable&quot;:true,&quot;api&quot;:&quot;https:&#x2F;&#x2F;disqus.skk.moe&#x2F;disqus&#x2F;&quot;,&quot;apikey&quot;:&quot;6Pv2Ve0PGNd30tbaq58BOQAXhKeRpXg0E1nKoCoAAI7SqsP7rzt5EoOY0wUKrYfR&quot;,&quot;shortname&quot;:&quot;laosu&quot;,&quot;js&quot;:{&quot;url&quot;:&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;disqusjs@1.3.0&#x2F;dist&#x2F;disqus.js&quot;,&quot;integrity&quot;:&quot;sha256-LVaMHPQ2zLqOc5rXSAfr4d1PIkEGNLyyUTDNPZmTtUw&#x3D;&quot;}}</script>
+<script src="/js/third-party/comments/disqusjs.js"></script>
 
 </body>
 </html>
